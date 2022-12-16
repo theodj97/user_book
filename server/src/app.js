@@ -12,8 +12,7 @@ const app = express()
 // Este método se utiliza para recibir los bodys de las consultas
 app.use(express.json())
 // Este método se utiliza para que no se bloqueen las llamadas por cors
-// Elimino la última letra con substring porque me añade un "/" al final de la URL y me da error
-app.use(cors({ credentials: true, origin: ANGULAR_CLIENT.substring(0, ANGULAR_CLIENT.length - 1) }))
+app.use(cors({ credentials: true, origin: ANGULAR_CLIENT }))
 
 app.use('/api', userRoutes)
 app.use('/api', loginRoutes)
