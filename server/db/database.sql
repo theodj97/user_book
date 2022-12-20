@@ -54,8 +54,8 @@ INSERT INTO countries (ISO3, cname, phone_ext) VALUES ('AFG', 'Afghanistan', '93
 
 
 -- users //Passwd is Passwd12345! bcrypt encrypted
-INSERT INTO users VALUES (1, 'test1', 'testing1', 'test1@test.test', 'ESP', '123123123', 'ESP', '1997-07-27', (NOW()), 'Passwd12345!');
-INSERT INTO users VALUES (2, 'test2', 'testing2', 'test2@test.test', 'ESP', '123123123', 'ESP', '1997-07-27', (NOW()), 'Passwd12345!');
+INSERT INTO users VALUES (1, 'test1', 'testing1', 'test1@test.test', 'ESP', '123123123', 'ESP', '1997-07-27', (NOW()), 'ewI1CYZZGfGZqt7LnlnUQmZPF7+gMwRrpkoMqHd8QuE=');
+INSERT INTO users VALUES (2, 'test2', 'testing2', 'test2@test.test', 'ESP', '123123123', 'ESP', '1997-07-27', (NOW()), 'ewI1CYZZGfGZqt7LnlnUQmZPF7+gMwRrpkoMqHd8QuE=');
 
 -- books
 INSERT INTO books (title, author, publisher, publication_date, page_count, genre)
