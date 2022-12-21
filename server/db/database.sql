@@ -87,4 +87,4 @@ VALUES
     (15, 'Frankenstein', 'Mary Shelley', 'frankenstein, Hughes, Harding, Mavor, & Jones', '1818-01-01', 280, 3);
 
 -- user_books
-INSERT INTO user_book (id, user, book) VALUES (1, 1, 1), (2, 1, 4), (3, 1, 6), (4, 1, 2), (5, 1, 9);
+INSERT INTO user_book (id, user, book) VALUES (1, 1, 1), (2, 1, 2), (3, 1, 3), (4, 1, 4), (5, 1, 5), (6, 1, 6), (7, 1, 7), (8, 1, 8), (9, 1, 9), (10, 1, 10), (11, 1, 11), (12, 1, 12), (13, 1, 13), (14, 1, 14);

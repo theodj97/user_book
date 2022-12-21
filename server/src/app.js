@@ -8,6 +8,7 @@ import { ANGULAR_CLIENT } from './config.js'
 import loginRoutes from './routes/login.routes.js'
 import uBookRoutes from './routes/user_books.routes.js'
 import imagesRoutes from './routes/images.routes.js'
+import genresRoutes from './routes/genres.routes.js'
 
 const app = express()
 // Este método se utiliza para recibir los bodys de las consultas
@@ -21,6 +22,7 @@ app.use(cors({ credentials: true, origin: ANGULAR_CLIENT }))
 app.use('/api', loginRoutes)
 app.use('/api', uBookRoutes)
 app.use('/api', imagesRoutes)
+app.use('/api', genresRoutes)
 
 // Aquí se define una función que indica que la URL introducida por el cliente NO existe
 app.use((req, res, next) => {
