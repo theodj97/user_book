@@ -47,6 +47,9 @@ CREATE TABLE IF NOT EXISTS user_book (
     id INT NOT NULL AUTO_INCREMENT,
     user INT NOT NULL,
     book INT NOT NULL,
+    purchased DATETIME NOT NULL,
+    readed TINYINT(1) NOT NULL,
+    page_index INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user) REFERENCES users(id) ON UPDATE CASCADE ON DELETE CASCADE,
     FOREIGN KEY (book) REFERENCES books(id) ON UPDATE CASCADE ON DELETE CASCADE
@@ -87,4 +90,4 @@ VALUES
     (15, 'Frankenstein', 'Mary Shelley', 'frankenstein, Hughes, Harding, Mavor, & Jones', '1818-01-01', 280, 3);
 
 -- user_books
-INSERT INTO user_book (id, user, book) VALUES (1, 1, 1), (2, 1, 2), (3, 1, 3), (4, 1, 4), (5, 1, 5), (6, 1, 6), (7, 1, 7), (8, 1, 8), (9, 1, 9), (10, 1, 10), (11, 1, 11), (12, 1, 12), (13, 1, 13), (14, 1, 14);
+INSERT INTO user_book (id, user, book, purchased, readed, page_index) VALUES (1, 1, 1, '2022-01-01 12:00:00', 0, 12), (2, 1, 2, '2022-02-01 15:00:00', 1, 34), (3, 1, 3, '2022-03-01 18:00:00', 0, 56), (4, 1, 4, '2022-04-01 21:00:00', 1, 78), (5, 1, 5, '2022-05-01 00:00:00', 0, 90), (6, 1, 6, '2022-06-01 03:00:00', 1, 102), (7, 1, 7, '2022-07-01 06:00:00', 0, 114), (8, 1, 8, '2022-08-01 09:00:00', 1, 126), (9, 1, 9, '2022-09-01 12:00:00', 0, 138), (10, 1, 10, '2022-10-01 15:00:00', 1, 150), (11, 1, 11, '2022-11-01 18:00:00', 0, 162), (12, 1, 12, '2022-12-01 21:00:00', 1, 174), (13, 1, 13, '2023-01-01 00:00:00', 0, 186), (14, 1, 14, '2023-02-01 03:00:00', 1, 198);
